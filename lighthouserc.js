@@ -7,15 +7,13 @@ module.exports = {
         chromeFlags: '--no-sandbox',
       },
     },
-    assert: {
-      preset: 'lighthouse:no-pwa',
-      
+    assert: {      
       assertions: {
-        'categories:performance': 'on',
+        'categories:performance': 'off',
         'categories:pwa': 'off',
         'categories:accessibility': 'off',
         
-        'uses-rel-preload': 'off',
+        'uses-rel-preload': 'on',
         'uses-rel-preconnect': 'off',
       },
     },
