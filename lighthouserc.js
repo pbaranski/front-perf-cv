@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 1,
-      url: ['https://me-front-perf-test1-lh.herokuapp.com/index.html'],
+      url: ['https://me-front-perf-feat-test3.herokuapp.com/index.html'],
       settings: {
         chromeFlags: '--no-sandbox',
       },
