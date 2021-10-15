@@ -20,7 +20,10 @@ module.exports = {
       },
     },
     upload: {
-      target: 'temporary-public-storage',
+//       target: 'temporary-public-storage',
+    target: 'lhci',
+    serverBaseUrl: 'https://light-ci.herokuapp.com/',
+    token: process.env.LHCI_TOKEN
     },
   },
 }
