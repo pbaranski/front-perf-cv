@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set lhci server env
-        env:
+        env: 
           LHCI_TOKEN_ENV: ${{ secrets.LHCI_TOKEN }}
       - name: run Lighthouse CI
         run: |
