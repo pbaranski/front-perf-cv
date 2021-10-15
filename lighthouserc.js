@@ -10,11 +10,13 @@ module.exports = {
     assert: {      
       assertions: {
         'categories:performance': 'on',
+//         'categories:best-practices': ["error", {"minScore": 1}],
+//         'categories:seo': ['error', {'minScore': 1}],
         'categories:pwa': 'off',
         'categories:accessibility': 'off',
-        'color-contrast': 'off',
-        'uses-rel-preload': 'off',
-        'uses-rel-preconnect': 'off',
+//         'color-contrast': 'off',
+//         'uses-rel-preload': 'off',
+//         'uses-rel-preconnect': 'off',
       },
     },
     upload: {
