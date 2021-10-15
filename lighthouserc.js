@@ -9,7 +9,12 @@ module.exports = {
     },
     assert: {
       preset: 'lighthouse:no-pwa',
+      
       assertions: {
+        'categories:performance': 'on',
+        'categories:pwa': 'off',
+        'categories:accessibility': 'off',
+        
         'uses-rel-preload': 'off',
         'uses-rel-preconnect': 'off',
       },
