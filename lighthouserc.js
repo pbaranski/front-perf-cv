@@ -9,11 +9,11 @@ module.exports = {
     },
     assert: {      
       assertions: {
-        'categories:performance': 'off',
+        'categories:performance': 'on',
         'categories:pwa': 'off',
         'categories:accessibility': 'off',
-        
-        'uses-rel-preload': 'on',
+        'color-contrast': 'off',
+        'uses-rel-preload': 'off',
         'uses-rel-preconnect': 'off',
       },
     },
