@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Decrypt secret
+        run: ./.github/scripts/decrypt_secret.sh
+        env:
+          LHCI_TOKEN_ENV: ${{ secrets.LHCI_TOKEN }}
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.8.x
