@@ -6,10 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set lhci server env
+      - name: run Lighthouse CI
         env: 
           LHCI_TOKEN_ENV: ${{ secrets.LHCI_TOKEN }}
-      - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.8.x
           lhci autorun
